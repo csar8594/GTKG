@@ -14,7 +14,11 @@ of the German Tourism Knowledge Graph *(GTKG)*
 ```
 GTKG
 ¦   README.md   
-¦
++---Task 1
+¦   ¦   presentation.pdf
+¦   ¦   presentation.pptx
++---Task 2
+¦   ¦   KG Assessment - Dimensions and Metrics.pdf
 +---scraper
 ¦   ¦   README.md
 ¦   ¦   requirements.txt
