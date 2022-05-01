@@ -25,7 +25,7 @@ GTKG
 ¦   ¦   log.csv
 ¦   ¦   firmenregister.json
 ¦   ¦   scraper.py
-+---3__Scraper_results
++---4__Scraper_results
 ¦   ¦   firmenregister.json
 ¦   ¦   log.csv
 ```
