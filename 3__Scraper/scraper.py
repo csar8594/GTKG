@@ -150,7 +150,7 @@ def getAllHotelURL(pageurl, pageslist):
     '''
     allHotelURLList = []
 
-    print("Scraping all " + str(len(pageslist)) + " websites containing hotels:")
+    print("Scraping all " + str(len(pageslist)) + " websites containing lodging businesses:")
     for page in tqdm(pageslist):
         url = "http://firmenregister.de/" + str(pageurl) + str(page)
         soup = getHTMLSource(url)
@@ -282,7 +282,7 @@ def main():
 
     # get all the info from every hotel
     hotelArrayList = []
-    print("Scraping information of all " + str(len(allHotelURLList)) + " hotels:")
+    print("Scraping information of all " + str(len(allHotelURLList)) + " lodging businesses:")
     for hotelUrl in tqdm(allHotelURLList):
         hotelArrayList.append(getHotelInfo(hotelUrl))
 
