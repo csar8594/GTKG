@@ -194,8 +194,13 @@ def getHotelInfo(hotelURL):
     # country code and prefix and prefix and number respectively
     for element in hoteldata:
         index = hoteldata.index(element)
+        if element == 'Firmenname':
+            hoteldata[index + 1] = hoteldata[index + 1].replace('"', '\'')
         if element == 'Produkte / Infos':
             hoteldata[index] = element.replace(' ', '')
+            hoteldata[index+1] = hoteldata[index+1].replace('"', '\'')
+        if element == 'Kontakt':
+            hoteldata[index+1] = hoteldata[index+1].replace('"', '\'')
         if element == 'PLZ / Ort':
             if hoteldata[index + 1].isnumeric():
                 hoteldata[index] = 'PLZ'
@@ -243,20 +248,14 @@ def convertToJsonFile(hotelArrayList):
         if not np.array_equal(arr, hotelArrayList[len(hotelArrayList) - 1]):
             strToWrite = "\t{\n"
             for line in arr:
-                if line[1].isnumeric():
-                    strToWrite += "\t\t\"" + line[0] + "\": " + line[1] + ",\n"
-                else:
-                    strToWrite += "\t\t\"" + line[0] + "\": \"" + line[1] + "\",\n"
+                strToWrite += "\t\t\"" + line[0] + "\": \"" + line[1] + "\",\n"
 
             f.write(strToWrite[:-2])
             f.write("\n\t},\n")
         else:
             strToWrite = "\t{\n"
             for line in arr:
-                if line[1].isnumeric():
-                    strToWrite += "\t\t\"" + line[0] + "\": " + line[1] + ",\n"
-                else:
-                    strToWrite += "\t\t\"" + line[0] + "\": \"" + line[1] + "\",\n"
+                strToWrite += "\t\t\"" + line[0] + "\": \"" + line[1] + "\",\n"
 
             f.write(strToWrite[:-2])
             f.write("\n\t}\n]")
