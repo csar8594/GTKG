@@ -1,6 +1,6 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix rml: <http://semweb.mmlab.be/ns/rml#> .
-@prefix schema: <http://schema.org/> .
+@prefix schema: <https://schema.org/> .
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -13,8 +13,8 @@ rml:iterator "$.[*]".
 rml:logicalSource <#LOGICALSOURCE>;
 
 rr:subjectMap [
-    rr:template "http://lodgingbusiness.example.com/";
-    rr:class schema:LodgingBusiness;
+    rr:template "https://lodgingbusiness.example.com/{Firmenname}";
+    rr:class schema:Hotel;
 ];
 
 rr:predicateObjectMap [
@@ -77,7 +77,7 @@ rr:predicateObjectMap [
 rml:logicalSource <#LOGICALSOURCE>;
 
 rr:subjectMap [
-   rr:template "http://address.example.com/";
+   rr:template "https://address.example.com/{Adresse}";
    rr:class schema:PostalAddress;
 ];
 
@@ -113,7 +113,7 @@ rr:predicateObjectMap [
 rml:logicalSource <#LOGICALSOURCE>;
 
 rr:subjectMap [
-   rr:template "http://contact.example.com/";
+   rr:template "https://contact.example.com/{Kontakt}";
    rr:class schema:ContactPoint;
 ];
 
