@@ -17,7 +17,7 @@ python -m pip install git+https://github.com/anuzzolese/pyrml
 python -m pip install -r ./requirements.txt
 echo "✔️ installed dependencies"
 
-# start json_to_rdf.px
+# start json_to_rdf.py
 echo "✔️ converted 'firmenregister.json' to 'firmenregister.n3'"
 python json_to_rdf.py
 
