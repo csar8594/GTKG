@@ -28,4 +28,18 @@ GTKG
 +---4__Scraper_results
 ¦   ¦   firmenregister.json
 ¦   ¦   log.csv
++---5__Mappings
+¦   +---mapping_firmenregister
+¦   ¦   ¦   convert.sh
+¦   ¦   ¦   firmenregister.json
+¦   ¦   ¦   firmenregister.n3
+¦   ¦   ¦   json_to_rdf.py
+¦   ¦   ¦   mapping.ttl
+¦   ¦   ¦   requirements.txt
++---6__Assessment
+¦   +---assessment_firmenregister
+¦   ¦   ¦   convert.sh
+¦   ¦   ¦   firmenregister.json
+¦   ¦   ¦   assessing.py
+¦   ¦   ¦   requirements.txt
 ```
