@@ -1,0 +1,150 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix schema: <https://schema.org/> .
+@prefix ex: <http://example.com/ns#> .
+@base <http://example.com/ns#>.
+
+
+<#LOGICALSOURCE>
+rml:source "./data/best_data.json";
+rml:referenceFormulation ql:JSONPath;
+rml:iterator "$.[*]".
+
+
+<#Mapping>
+  rml:logicalSource <#LOGICALSOURCE>;
+  
+   rr:subjectMap [
+      rr:template "https://schema.org/Hotel/{hotelLabel}";
+      rr:class schema:Hotel;
+   ];
+  
+  
+  rr:predicateObjectMap [
+      rr:predicate schema:name;
+      rr:objectMap [ rml:reference "hotelLabel" ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate schema:email;
+      rr:objectMap [ rml:reference "email" ];
+  ];
+  
+  rr:predicateObjectMap [
+      rr:predicate schema:telephone;
+      rr:objectMap [ rml:reference "phone_number" ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate schema:image;
+      rr:objectMap [ rml:reference "official_website" ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate schema:foundingDate;
+      rr:objectMap [ rml:reference "inception" ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate schema:founder;
+      rr:objectMap [ rml:reference "owned_byLabel" ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate schema:checkinTime;
+      rr:objectMap [ rml:reference "check_in_timeLabel" ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate schema:checkoutTime;
+      rr:objectMap [ rml:reference "check_out_timeLabel" ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate ex:address;
+      rr:objectMap [
+        rr:parentTriplesMap <#Address>;
+        rr:joinCondition [
+          rr:child "hotelLabel";
+          rr:parent "hotelLabel";
+        ]
+      ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate ex:image;
+      rr:objectMap [
+        rr:parentTriplesMap <#Image>;
+        rr:joinCondition [
+          rr:child "hotelLabel";
+          rr:parent "hotelLabel";
+        ]
+      ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate ex:geo;
+      rr:objectMap [
+        rr:parentTriplesMap <#GeoCoords>;
+        rr:joinCondition [
+          rr:child "hotelLabel" ;
+          rr:parent "hotelLabel";
+          ]
+      ];
+  ].
+
+<#GeoCoords>
+  rml:logicalSource <#LOGICALSOURCE>;
+
+  rr:subjectMap [
+        rr:template "https://schema.org/Hotel/{hotelLabel}/geo";
+        rr:class schema:GeoCoordinates;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:latitude;
+    rr:objectMap [rml:reference "lat"];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:longitude;
+    rr:objectMap [rml:reference "lon"];
+  ].
+
+<#Image>
+  rml:logicalSource <#LOGICALSOURCE>;
+
+  rr:subjectMap [
+        rr:template "https://schema.org/Hotel/{hotelLabel}/image";
+        rr:class schema:ImageObject;
+  ];
+  
+  rr:predicateObjectMap [
+    rr:predicate schema:contentUrl;
+    rr:objectMap [rml:reference "image"];
+  ].
+
+  <#Address>
+  rml:logicalSource <#LOGICALSOURCE>;
+
+  rr:subjectMap [
+        rr:template "https://schema.org/Hotel/{hotelLabel}/address";
+        rr:class schema:PostalAddress;
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate schema:streetAddress;
+      rr:objectMap [ rml:reference "street_address" ];
+  ];
+
+      rr:predicateObjectMap [
+      rr:predicate schema:addressCountry;
+      rr:objectMap [ rml:reference "countryLabel" ];
+  ];
+
+    rr:predicateObjectMap [
+      rr:predicate schema:postalCode;
+      rr:objectMap [ rml:reference "postal_code" ];
+  ].

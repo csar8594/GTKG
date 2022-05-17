@@ -1,0 +1,19 @@
+SELECT ?hotelLabel ?countryLabel ?email_address ?phone_number ?street_address ?postal_code ?image ?official_website ?hotel_ratingLabel ?coordinate_location ?inception ?owned_byLabel ?check_out_timeLabel ?check_in_timeLabel WHERE {
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  ?hotel wdt:P31 wd:Q27686;
+    wdt:P17 wd:Q183.
+  OPTIONAL { ?hotel wdt:P17 ?country. }
+  OPTIONAL { ?hotel wdt:P968 ?email_address. }
+  OPTIONAL { ?hotel wdt:P1329 ?phone_number. }
+  OPTIONAL { ?hotel wdt:P6375 ?street_address. }
+  OPTIONAL { ?hotel wdt:P281 ?postal_code. }
+  OPTIONAL { ?hotel wdt:P18 ?image. }
+  OPTIONAL { ?hotel wdt:P856 ?official_website. }
+  OPTIONAL { ?hotel wdt:P10290 ?hotel_rating. }
+  OPTIONAL { ?hotel wdt:P625 ?coordinate_location. }
+  OPTIONAL { ?hotel wdt:P281 ?postal_code. }
+  OPTIONAL { ?hotel wdt:P571 ?inception. }
+  OPTIONAL { ?hotel wdt:P127 ?owned_by. }
+  OPTIONAL { ?hotel wdt:P8746 ?check_out_time. }
+  OPTIONAL { ?hotel wdt:P8745 ?check_in_time. }
+}

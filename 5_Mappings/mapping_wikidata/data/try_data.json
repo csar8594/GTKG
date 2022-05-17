@@ -1,0 +1,20 @@
+[
+    {
+        "hotelLabel": "Hotel Elephant",
+        "countryLabel": "Germany",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weimar%20Hotel%20Elephant.jpg",
+        "lat": "50.97888889",
+        "lon": "11.33027778"
+    },
+    {
+        "hotelLabel": "Waldorf Astoria Berlin",
+        "countryLabel": "Germany",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Zoofenster%20vom%20Breitscheidplatz%20aus%20bei%20Nacht%2020141023%205.jpg",
+        "official_website": "https://www.hilton.com/en/hotels/berwawa-waldorf-astoria-berlin/",
+        "hotel_ratingLabel": "5-star hotel rating",
+        "lat": "52.505722222222",
+        "lon": "13.332972222222",
+        "inception": "2013-01-01T00:00:00Z",
+        "owned_byLabel": "Hilton Worldwide"
+    }
+]

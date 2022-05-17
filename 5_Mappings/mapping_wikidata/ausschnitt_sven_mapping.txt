@@ -1,0 +1,48 @@
+<https://schema.org/Hotel/18Arts%20Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/18Arts%20Hotel> <https://schema.org/GeoCoordinates> "Point(6.94432 50.9408)" .
+<https://schema.org/Hotel/18Arts%20Hotel> <https://schema.org/name> "18Arts Hotel" .
+<https://schema.org/Hotel/1st%20Floor%20K%C3%B6ln%202> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/1st%20Floor%20K%C3%B6ln%202> <https://schema.org/GeoCoordinates> "Point(6.95449 50.96516)" .
+<https://schema.org/Hotel/1st%20Floor%20K%C3%B6ln%202> <https://schema.org/name> "1st Floor Köln 2" .
+<https://schema.org/Hotel/25hours%20Hotel%20Altes%20Hafenamt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/25hours%20Hotel%20Altes%20Hafenamt> <https://schema.org/GeoCoordinates> "Point(9.9993 53.54142)" .
+<https://schema.org/Hotel/25hours%20Hotel%20Altes%20Hafenamt> <https://schema.org/name> "25hours Hotel Altes Hafenamt" .
+<https://schema.org/Hotel/25hours%20Hotel%20Bikini%20Berlin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/25hours%20Hotel%20Bikini%20Berlin> <https://schema.org/GeoCoordinates> "Point(13.33798 52.50552)" .
+<https://schema.org/Hotel/25hours%20Hotel%20Bikini%20Berlin> <https://schema.org/name> "25hours Hotel Bikini Berlin" .
+<https://schema.org/Hotel/25hours%20Hotel%20Das%20Tour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/25hours%20Hotel%20Das%20Tour> <https://schema.org/GeoCoordinates> "Point(6.79585 51.23101)" .
+<https://schema.org/Hotel/25hours%20Hotel%20Das%20Tour> <https://schema.org/name> "25hours Hotel Das Tour" .
+<https://schema.org/Hotel/25hours%20Hotel%20HafenCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/25hours%20Hotel%20HafenCity> <https://schema.org/GeoCoordinates> "Point(9.99867 53.5414)" .
+<https://schema.org/Hotel/25hours%20Hotel%20HafenCity> <https://schema.org/name> "25hours Hotel HafenCity" .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Circle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Circle> <https://schema.org/GeoCoordinates> "Point(6.94358 50.9417)" .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Circle> <https://schema.org/name> "25hours Hotel The Circle" .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Goldman> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Goldman> <https://schema.org/GeoCoordinates> "Point(8.71294 50.11184)" .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Goldman> <https://schema.org/name> "25hours Hotel The Goldman" .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Royal%20Bavarian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Royal%20Bavarian> <https://schema.org/GeoCoordinates> "Point(11.56131 48.13971)" .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Royal%20Bavarian> <https://schema.org/name> "25hours Hotel The Royal Bavarian" .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Trip> <https://schema.org/GeoCoordinates> "Point(8.6633 50.10936)" .
+<https://schema.org/Hotel/25hours%20Hotel%20The%20Trip> <https://schema.org/name> "25hours Hotel The Trip" .
+<https://schema.org/Hotel/2ND%20Home%20Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/2ND%20Home%20Hotel> <https://schema.org/GeoCoordinates> "Point(10.494432 48.8565)" .
+<https://schema.org/Hotel/2ND%20Home%20Hotel> <https://schema.org/name> "2ND Home Hotel" .
+<https://schema.org/Hotel/36%20Ph%C3%B4%20C%C3%B4%20Guesthouse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/36%20Ph%C3%B4%20C%C3%B4%20Guesthouse> <https://schema.org/GeoCoordinates> "Point(11.32923 50.97961)" .
+<https://schema.org/Hotel/36%20Ph%C3%B4%20C%C3%B4%20Guesthouse> <https://schema.org/name> "36 Phô Cô Guesthouse" .
+<https://schema.org/Hotel/36%20Rooms%20Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/36%20Rooms%20Hotel> <https://schema.org/name> "36 Rooms Hotel" .
+<https://schema.org/Hotel/36%20Rooms%20Hotel> <https://schema.org/postalCode> "10999" .
+<https://schema.org/Hotel/A-ROSA%20Sylt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/A-ROSA%20Sylt> <https://schema.org/GeoCoordinates> "Point(8.42702 55.01436)" .
+<https://schema.org/Hotel/A-ROSA%20Sylt> <https://schema.org/name> "A-ROSA Sylt" .
+<https://schema.org/Hotel/A-ROSA%20Travem%C3%BCnde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/A-ROSA%20Travem%C3%BCnde> <https://schema.org/GeoCoordinates> "Point(10.87821 53.96321)" .
+<https://schema.org/Hotel/A-ROSA%20Travem%C3%BCnde> <https://schema.org/name> "A-ROSA Travemünde" .
+<https://schema.org/Hotel/AC%20Hotel%20Mainz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/Hotel> .
+<https://schema.org/Hotel/AC%20Hotel%20Mainz> <https://schema.org/GeoCoordinates> "Point(8.25914 50.00226)" .
+<https://schema.org/Hotel/AC%20Hotel%20Mainz> <https://schema.org/name> "AC Hotel Mainz" .
