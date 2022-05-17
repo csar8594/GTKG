@@ -27,7 +27,11 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
     rr:predicate schema:PostalAddress;
     rr:objectMap [
-        rr:parentTriplesMap <#AddressMapping_JSON>
+        rr:parentTriplesMap <#AddressMapping_JSON>;
+        rr:joinCondition [
+            rr:child "Firmenname";
+            rr:parent "Firmenname";
+        ]
     ];
 ];
 
@@ -69,7 +73,11 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
     rr:predicate schema:ContactPoint;
     rr:objectMap [
-        rr:parentTriplesMap <#ContactMapping_JSON>
+        rr:parentTriplesMap <#ContactMapping_JSON>;
+        rr:joinCondition [
+            rr:child "Firmenname";
+            rr:parent "Firmenname";
+        ]
     ];
 ].
 
