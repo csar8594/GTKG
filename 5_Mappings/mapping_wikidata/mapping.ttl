@@ -8,7 +8,7 @@
 
 
 <#LOGICALSOURCE>
-rml:source "./data/best_data.json";
+rml:source "./data/end_best_data.json";
 rml:referenceFormulation ql:JSONPath;
 rml:iterator "$.[*]".
 
@@ -29,12 +29,17 @@ rml:iterator "$.[*]".
 
     rr:predicateObjectMap [
       rr:predicate schema:email;
-      rr:objectMap [ rml:reference "email" ];
+      rr:objectMap [ rml:reference "email_address" ];
   ];
   
   rr:predicateObjectMap [
       rr:predicate schema:telephone;
       rr:objectMap [ rml:reference "phone_number" ];
+  ];
+
+   rr:predicateObjectMap [
+      rr:predicate schema:faxNumber;
+      rr:objectMap [ rml:reference "fax_number" ];
   ];
 
     rr:predicateObjectMap [
@@ -48,11 +53,6 @@ rml:iterator "$.[*]".
   ];
 
     rr:predicateObjectMap [
-      rr:predicate schema:founder;
-      rr:objectMap [ rml:reference "owned_byLabel" ];
-  ];
-
-    rr:predicateObjectMap [
       rr:predicate schema:checkinTime;
       rr:objectMap [ rml:reference "check_in_timeLabel" ];
   ];
@@ -60,6 +60,17 @@ rml:iterator "$.[*]".
     rr:predicateObjectMap [
       rr:predicate schema:checkoutTime;
       rr:objectMap [ rml:reference "check_out_timeLabel" ];
+  ];
+
+      rr:predicateObjectMap [
+      rr:predicate ex:founder;
+      rr:objectMap [
+        rr:parentTriplesMap <#Owner>;
+        rr:joinCondition [
+          rr:child "hotelLabel";
+          rr:parent "hotelLabel";
+        ]
+      ];
   ];
 
     rr:predicateObjectMap [
@@ -144,7 +155,25 @@ rml:iterator "$.[*]".
       rr:objectMap [ rml:reference "countryLabel" ];
   ];
 
+      rr:predicateObjectMap [
+      rr:predicate schema:addressLocality;
+      rr:objectMap [ rml:reference "locationLabel" ];
+  ];
+
     rr:predicateObjectMap [
       rr:predicate schema:postalCode;
       rr:objectMap [ rml:reference "postal_code" ];
+  ].
+
+<#Owner>
+  rml:logicalSource <#LOGICALSOURCE>;
+
+  rr:subjectMap [
+    rr:template "https://schema.org/Hotel/{hotelLabel}/owner";
+    rr:class schema:Person;
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate schema:name;
+    rr:objectMap [ rml:reference "owned_byLabel" ];
   ].
