@@ -30,12 +30,10 @@ GTKG
 ¦   ¦   log.csv
 +---5__Mappings
 ¦   +---mapping_firmenregister
-¦   ¦   ¦   convert.sh
+¦   ¦   ¦   index.js
 ¦   ¦   ¦   firmenregister.json
 ¦   ¦   ¦   firmenregister.n3
-¦   ¦   ¦   json_to_rdf.py
 ¦   ¦   ¦   mapping.ttl
-¦   ¦   ¦   requirements.txt
 +---6__Assessment
 ¦   +---assessment_firmenregister
 ¦   ¦   ¦   convert.sh
