@@ -2,6 +2,7 @@ import json
 import random
 import re
 
+import csv
 import numpy
 import numpy as np
 import pgeocode
@@ -10,6 +11,7 @@ import requests
 import validators
 from email_validator import validate_email, EmailNotValidError
 from tqdm import tqdm
+from statistics import mean
 
 
 def loadJSONintoArray():
@@ -49,6 +51,22 @@ def getRandomHotels(hotelArr):
     return randIndex
 
 
+def getRandomHotelsWithNum(hotelArr, num):
+    '''
+    this function gets random indices of 10 hotels in the hotelArr list
+
+    :param hotelArr: the list containing all the hotel arrays
+    :return: list containing random indices
+    '''
+    min = 0
+    max = num
+    length = len(hotelArr)
+
+    randIndex = random.sample(range(min, length), max)
+
+    return randIndex
+
+
 def getSubHotelArr(hotelArr, indices):
     '''
     this function gets the hotels from the indices and returns this sub list
@@ -66,6 +84,17 @@ def getSubHotelArr(hotelArr, indices):
     return hotelArrSub
 
 
+def getAveragePropertyNum(hotelArrSub):
+    globalCounter = []
+
+    for hotel in hotelArrSub:
+        col = hotel[:, 0]
+
+        globalCounter.append(len(col))
+
+    return mean(globalCounter)
+
+
 def getInstanceCompleteness(hotelArrSub):
     '''
     this function calculates how many hotels actually have all 4 mandatory properties
@@ -74,21 +103,12 @@ def getInstanceCompleteness(hotelArrSub):
     :return: number of hotels having all 4 mandatory properties
     '''
     globalCounter = 0
+    avgPropNum = getAveragePropertyNum(hotelArrSub)
 
     for hotel in hotelArrSub:
-        localCounter = 0
         col = hotel[:, 0]
 
-        if 'hotelLabel' in col:
-            localCounter += 1
-        if 'phone_number' or 'Mobil' in col:
-            localCounter += 1
-        if 'email_address' in col:
-            localCounter += 1
-        if 'street_address' or 'postal_code' or 'locationLabel' or 'countryLabel' in col:
-            localCounter += 1
-
-        if localCounter == 4:
+        if len(col) >= avgPropNum:
             globalCounter += 1
 
     return globalCounter
@@ -121,7 +141,7 @@ def urlChecker(url):
         return False
 
 
-def semPostalCode(postalCode):
+def synPostalCode(postalCode):
     '''
     this fucntion checks if a postal code is a valid postal code in Germany
 
@@ -138,7 +158,7 @@ def semPostalCode(postalCode):
     return ret
 
 
-def semTelephone(phoneNumber):
+def synTelephone(phoneNumber):
     '''
     this function checks if a phone number is a valid phone number in Germany
 
@@ -153,7 +173,7 @@ def semTelephone(phoneNumber):
     return ret
 
 
-def semFax(faxNumber):
+def synFax(faxNumber):
     '''
     this function checks if a fax number is a valid fax number in Germany
 
@@ -168,7 +188,7 @@ def semFax(faxNumber):
     return ret
 
 
-def semMail(email):
+def synMail(email):
     '''
     this function checks if an email is a valid email
 
@@ -184,7 +204,7 @@ def semMail(email):
     return ret
 
 
-def semWebsite(website):
+def synWebsite(website):
     '''
     this function checks if a website is a valid website using a validator if a url is valid and
     also if the site is reachable using the urlChecker
@@ -200,7 +220,7 @@ def semWebsite(website):
     return ret
 
 
-def semStreet(street):
+def synStreet(street):
     '''
     this function checks if a street name is valid using a regex (containing letters, numbers, dots, etc.)
 
@@ -219,9 +239,9 @@ def semStreet(street):
     return ret
 
 
-def semValid(hotelArrSub):
+def synValid(hotelArrSub):
     '''
-    this function combines all semantic check functions from above checks if a single hotel instance is valid or not
+    this function combines all syntactic check functions from above checks if a single hotel instance is valid or not
     only valid if all are valid
 
     :param hotelArrSub: list containing all hotel arrays
@@ -233,23 +253,17 @@ def semValid(hotelArrSub):
         localBool = []
         for line in hotel:
             if line[0] == 'postal_code':
-                localBool.append(semPostalCode(line[1]))
-                # print("postal_code", semPostalCode(line[1]))
+                localBool.append(synPostalCode(line[1]))
             if line[0] == 'phone_number':
-                localBool.append(semTelephone(line[1]))
-                # print("phone_number", semTelephone(line[1]))
-            if line[0] == 'Fax':
-                localBool.append(semFax(line[1]))
-                # print("Fax", semFax(line[1]))
+                localBool.append(synTelephone(line[1]))
+            if line[0] == 'fax_number':
+                localBool.append(synFax(line[1]))
             if line[0] == 'email_address':
-                localBool.append(semMail(line[1]))
-                # print("email_address", semMail(line[1]))
-            if line[0] == 'Homepage':
-                localBool.append(semWebsite(line[1]))
-                # print("Homepage", semWebsite(line[1]))
+                localBool.append(synMail(line[1]))
+            if line[0] == 'official_website':
+                localBool.append(synWebsite(line[1]))
             if line[0] == 'street_address':
-                localBool.append(semStreet(line[1]))
-                # print("street_address", semStreet(line[1]))
+                localBool.append(synStreet(line[1]))
 
         if all(localBool) == True:
             globalCounter += 1
@@ -257,7 +271,19 @@ def semValid(hotelArrSub):
     return globalCounter
 
 
-def synPostalCode(postalCode):
+def manualHotelCheck(hotelArrSubSub, indices):
+    '''
+    this function writes the 10 hotels to be checked manually if data really is correct and belongs to the actual hotel
+
+    :param hotelArrSubSUb the array to get the horels from
+    :param indeices the indices to the 10 hotels that need to be checked
+    '''
+    with open('manualChecking.csv', 'w') as file:
+        writer = csv.writer(file)
+        writer.writerows(hotelArrSubSub)
+
+
+def semPostalCode(postalCode):
     '''
     this function checks if a postal code is numeric/a number
 
@@ -272,7 +298,7 @@ def synPostalCode(postalCode):
     return ret
 
 
-def synTelephone(phoneNumber):
+def semTelephone(phoneNumber):
     '''
     this function checks if a phone number is numeric or has a + or a space
 
@@ -291,7 +317,7 @@ def synTelephone(phoneNumber):
     return ret
 
 
-def synFax(faxNumber):
+def semFax(faxNumber):
     '''
     this function checks if a fux number is numeric or has a + or space
 
@@ -310,7 +336,7 @@ def synFax(faxNumber):
     return ret
 
 
-def synMail(email):
+def semMail(email):
     '''
     this function checks if an email is a string
 
@@ -325,7 +351,7 @@ def synMail(email):
     return ret
 
 
-def synWebsite(website):
+def semWebsite(website):
     '''
     this function checks if a website isa string
 
@@ -340,7 +366,7 @@ def synWebsite(website):
     return ret
 
 
-def synStreet(street):
+def semStreet(street):
     '''
     this function checks if a street name is valid
 
@@ -355,7 +381,7 @@ def synStreet(street):
     return ret
 
 
-def synValid(hotelArrSub):
+def semValid(hotelArrSub):
     '''
     this function combines all syntactic check functions from above checks if a single hotel instance is valid or not
     only valid if all are valid
@@ -369,23 +395,17 @@ def synValid(hotelArrSub):
         localBool = []
         for line in hotel:
             if line[0] == 'postal_code':
-                localBool.append(synPostalCode(line[1]))
-                # print("postal_code", semPostalCode(line[1]))
+                localBool.append(semPostalCode(line[1]))
             if line[0] == 'phone_number':
-                localBool.append(synTelephone(line[1]))
-                # print("phone_number", semTelephone(line[1]))
-            if line[0] == 'Fax':
-                localBool.append(synFax(line[1]))
-                # print("Fax", semFax(line[1]))
+                localBool.append(semTelephone(line[1]))
+            if line[0] == 'fax_number':
+                localBool.append(semFax(line[1]))
             if line[0] == 'email_address':
-                localBool.append(synMail(line[1]))
-                # print("email_address", semMail(line[1]))
-            if line[0] == 'Homepage':
-                localBool.append(synWebsite(line[1]))
-                # print("Homepage", semWebsite(line[1]))
+                localBool.append(semMail(line[1]))
+            if line[0] == 'official_website':
+                localBool.append(semWebsite(line[1]))
             if line[0] == 'street_address':
-                localBool.append(synStreet(line[1]))
-                # print("street_address", semStreet(line[1]))
+                localBool.append(semStreet(line[1]))
 
         if all(localBool) == True:
             globalCounter += 1
@@ -404,16 +424,18 @@ def main():
     hotelArrSub = getSubHotelArr(hotelArr, randIndex)
 
     instaceCompleteness = getInstanceCompleteness(hotelArrSub)
-    print(str(instaceCompleteness) + " out of " + str(len(hotelArrSub)) + " hotel(s) have all 4 mandatory properties")
-
     populationCompleteness = getPopulationCompletenes(hotelArr)
-    print("wikidata.org has " + str(populationCompleteness) + " hotels -- GTKG has 259")
-
-    semValidity = semValid(hotelArrSub)
-    print(str(semValidity) + " out of " + str(len(hotelArrSub)) + " hotel(s) follow semantic validity")
-
     synValidity = synValid(hotelArrSub)
+    semValidity = semValid(hotelArrSub)
+    
+    print(str(instaceCompleteness) + " out of " + str(len(hotelArrSub)) + " hotel(s) have all 4 mandatory properties")
+    print("wikidata.org has " + str(populationCompleteness) + " hotels -- GTKG has 259")
+    print(str(semValidity) + " out of " + str(len(hotelArrSub)) + " hotel(s) follow semantic validity")
     print(str(synValidity) + " out of " + str(len(hotelArrSub)) + " hotel(s) follow syntactic validity")
+
+    randIndexSubSub = getRandomHotelsWithNum(hotelArrSub, 10)
+    hotelArrSubSub = getSubHotelArr(hotelArrSub, randIndexSubSub)
+    manualHotelCheck(hotelArrSubSub, 10)
 
 
 if __name__ == '__main__':

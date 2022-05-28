@@ -17,7 +17,7 @@ python -m pip install -r ./requirements.txt
 echo "✔️ installed dependencies"
 
 # start assessing.py
-echo "✔️ getting assessment results from 'firmenregister.json'"
+echo "✔️ getting assessment results from 'wikidata.json'"
 python assessing.py
 
 # leave the virtual environment 'env'
