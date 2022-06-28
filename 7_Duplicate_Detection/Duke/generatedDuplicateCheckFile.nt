@@ -1,0 +1,294 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Recipe> .
+_:genid1 <http://schema.org/author> "Jake  Smith"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://schema.org/cookTime> "PT2H"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid1 <http://schema.org/datePublished> "2015-05-18"^^<http://schema.org/Date> .
+_:genid1 <http://schema.org/description> "Your recipe description goes here"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:genid2 <http://schema.org/manufacturer> _:genid3 .
+_:genid2 <http://schema.org/name> "Quinta dos Avidagos 2011 Avidagos Red (Douro)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid2 <http://schema.org/review> _:genid4 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Winery> .
+_:genid3 <http://schema.org/location> _:genid5 .
+_:genid3 <http://schema.org/name> "Quinta dos Avidagos"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+_:genid5 <http://schema.org/addressCountry> "Portugal"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:genid4 <http://schema.org/author> _:genid6 .
+_:genid4 <http://schema.org/description> "This is ripe and fruity, a wine that is smooth while still structured. Firm tannins are filled out with juicy red berry fruits and freshened with acidity. It's  already drinkable, although it will certainly be better from 2016."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+_:genid6 <http://schema.org/name> "Roger Voss"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid6 <http://schema.org/url> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/URL> .
+_:genid7 <http://schema.org/url> "@vossroger"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:genid8 <http://schema.org/manufacturer> _:genid9 .
+_:genid8 <http://schema.org/name> "Rainstorm 2013 Pinot Gris (Willamette Valley)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid8 <http://schema.org/review> _:genid10 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Winery> .
+_:genid9 <http://schema.org/location> _:genid11 .
+_:genid9 <http://schema.org/name> "Rainstorm"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+_:genid11 <http://schema.org/addressCountry> "US"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:genid10 <http://schema.org/author> _:genid12 .
+_:genid10 <http://schema.org/description> "Tart and snappy, the flavors of lime flesh and rind dominate. Some green pineapple pokes through, with crisp acidity underscoring the flavors. The wine was all stainless-steel fermented."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+_:genid12 <http://schema.org/name> "Paul Gregutt"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid12 <http://schema.org/url> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/URL> .
+_:genid13 <http://schema.org/url> "@paulgwine\u00A0"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:genid14 <http://schema.org/manufacturer> _:genid15 .
+_:genid14 <http://schema.org/name> "Sweet Cheeks 2012 Vintner's Reserve Wild Child Block Pinot Noir (Willamette Valley)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid14 <http://schema.org/review> _:genid16 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Winery> .
+_:genid15 <http://schema.org/location> _:genid17 .
+_:genid15 <http://schema.org/name> "Sweet Cheeks"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+_:genid17 <http://schema.org/addressCountry> "US"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:genid16 <http://schema.org/author> _:genid18 .
+_:genid16 <http://schema.org/description> "Much like the regular bottling from 2012, this comes across as rather rough and tannic, with rustic, earthy, herbal characteristics. Nonetheless, if you think of it as a pleasantly unfussy country wine, it's a good companion to a hearty winter stew."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+_:genid18 <http://schema.org/name> "Paul Gregutt"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid18 <http://schema.org/url> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/URL> .
+_:genid19 <http://schema.org/url> "@paulgwine\u00A0"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:genid20 <http://schema.org/manufacturer> _:genid21 .
+_:genid20 <http://schema.org/name> "Tandem 2011 Ars In Vitro Tempranillo-Merlot (Navarra)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid20 <http://schema.org/review> _:genid22 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Winery> .
+_:genid21 <http://schema.org/location> _:genid23 .
+_:genid21 <http://schema.org/name> "Tandem"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+_:genid23 <http://schema.org/addressCountry> "Spain"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:genid22 <http://schema.org/author> _:genid24 .
+_:genid22 <http://schema.org/description> "Blackberry and raspberry aromas show a typical Navarran whiff of green herbs and, in this case, horseradish. In the mouth, this is fairly full bodied, with tomatoey acidity. Spicy, herbal flavors complement dark plum fruit, while the finish is fresh but grabby."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+_:genid24 <http://schema.org/name> "Michael Schachner"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid24 <http://schema.org/url> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/URL> .
+_:genid25 <http://schema.org/url> "@wineschach"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:genid26 <http://schema.org/manufacturer> _:genid27 .
+_:genid26 <http://schema.org/name> "Terre di Giurfo 2013 Belsito Frappato (Vittoria)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid26 <http://schema.org/review> _:genid28 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Winery> .
+_:genid27 <http://schema.org/location> _:genid29 .
+_:genid27 <http://schema.org/name> "Terre di Giurfo"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+_:genid29 <http://schema.org/addressCountry> "Italy"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:genid28 <http://schema.org/author> _:genid30 .
+_:genid28 <http://schema.org/description> "Here's a bright, informal red that opens with aromas of candied berry, white pepper and savory herb that carry over to the palate. It's balanced with fresh acidity and soft tannins."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+_:genid30 <http://schema.org/name> "Kerin Keefe"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid30 <http://schema.org/url> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/URL> .
+_:genid31 <http://schema.org/url> "@kerinokeefe"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:genid32 <http://schema.org/manufacturer> _:genid33 .
+_:genid32 <http://schema.org/name> "Trimbach 2012 Gewurztraminer (Alsace)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid32 <http://schema.org/review> _:genid34 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Winery> .
+_:genid33 <http://schema.org/location> _:genid35 .
+_:genid33 <http://schema.org/name> "Trimbach"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+_:genid35 <http://schema.org/addressCountry> "France"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:genid34 <http://schema.org/author> _:genid36 .
+_:genid34 <http://schema.org/description> "This dry and restrained wine offers spice in profusion. Balanced with acidity and a firm texture, it's very much for food."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+_:genid36 <http://schema.org/name> "Roger Voss"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid36 <http://schema.org/url> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/URL> .
+_:genid37 <http://schema.org/url> "@vossroger"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:genid38 <http://schema.org/manufacturer> _:genid39 .
+_:genid38 <http://schema.org/name> "Jean-Baptiste Adam 2012 Les Natures Pinot Gris (Alsace)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid38 <http://schema.org/review> _:genid40 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Winery> .
+_:genid39 <http://schema.org/location> _:genid41 .
+_:genid39 <http://schema.org/name> "Jean-Baptiste Adam"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+_:genid41 <http://schema.org/addressCountry> "France"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:genid40 <http://schema.org/author> _:genid42 .
+_:genid40 <http://schema.org/description> "This has great depth of flavor with its fresh apple and pear fruits and touch of spice. It's off dry while balanced with acidity and a crisp texture. Drink now."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+_:genid42 <http://schema.org/name> "Roger Voss"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid42 <http://schema.org/url> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/URL> .
+_:genid43 <http://schema.org/url> "@vossroger"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:genid44 <http://schema.org/manufacturer> _:genid45 .
+_:genid44 <http://schema.org/name> "Kirkland Signature 2011 Mountain Cuv\u00E9e Cabernet Sauvignon (Napa Valley)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid44 <http://schema.org/review> _:genid46 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Winery> .
+_:genid45 <http://schema.org/location> _:genid47 .
+_:genid45 <http://schema.org/name> "Kirkland Signature"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/PostalAddress> .
+_:genid47 <http://schema.org/addressCountry> "US"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:genid46 <http://schema.org/author> _:genid48 .
+_:genid46 <http://schema.org/description> "Soft, supple plum envelopes an oaky structure in this Cabernet, supported by 15% Merlot. Coffee and chocolate complete the picture, finishing strong at the end, resulting in a value-priced wine of attractive flavor and immediate accessibility."^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Person> .
+_:genid48 <http://schema.org/name> "Virginie Boone"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid48 <http://schema.org/url> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/URL> .
+_:genid49 <http://schema.org/url> "@vboone"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:genid50 <http://schema.org/manufacturer> _:genid51 .
+_:genid50 <http://schema.org/name> "Leon Beyer 2012 Gewurztraminer (Alsace)"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:genid50 <http://schema.org/review> _:genid52 .
+_:b338 <http://schema.org/name> "Nicosia 2013 VulkÃ  Bianco  (Etna)" .
+_:b338 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Product> .
+_:b339 <http://schema.org/description> "Aromas include tropical fruit, broom, brimstone and dried herb. The palate isn't overly expressive, offering unripened apple, citrus and dried sage alongside brisk acidity." .
+_:b339 <http://schema.org/name> "Kerin Keefe" .
+_:b339 <http://schema.org/url> "@kerinokeefe" .
+_:b339 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b34 <http://schema.org/name> "Envolve" .
+_:b34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Manufacturer> .
+_:b340 <http://schema.org/description> "This is ripe and fruity, a wine that is smooth while still structured. Firm tannins are filled out with juicy red berry fruits and freshened with acidity. It's  already drinkable, although it will certainly be better from 2016." .
+_:b340 <http://schema.org/name> "Roger Voss" .
+_:b340 <http://schema.org/url> "@vossroger" .
+_:b340 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b341 <http://schema.org/description> "Tart and snappy, the flavors of lime flesh and rind dominate. Some green pineapple pokes through, with crisp acidity underscoring the flavors. The wine was all stainless-steel fermented." .
+_:b341 <http://schema.org/name> "Paul Gregutt" .
+_:b341 <http://schema.org/url> "@paulgwineÂ" .
+_:b341 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b342 <http://schema.org/description> "Pineapple rind, lemon pith and orange blossom start off the aromas. The palate is a bit more opulent, with notes of honey-drizzled guava and mango giving way to a slightly astringent, semidry finish." .
+_:b342 <http://schema.org/name> "Alexander Peartree" .
+_:b342 <http://schema.org/url> "" .
+_:b342 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b343 <http://schema.org/description> "Much like the regular bottling from 2012, this comes across as rather rough and tannic, with rustic, earthy, herbal characteristics. Nonetheless, if you think of it as a pleasantly unfussy country wine, it's a good companion to a hearty winter stew." .
+_:b343 <http://schema.org/name> "Paul Gregutt" .
+_:b343 <http://schema.org/url> "@paulgwineÂ" .
+_:b343 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b344 <http://schema.org/description> "Blackberry and raspberry aromas show a typical Navarran whiff of green herbs and, in this case, horseradish. In the mouth, this is fairly full bodied, with tomatoey acidity. Spicy, herbal flavors complement dark plum fruit, while the finish is fresh but grabby." .
+_:b344 <http://schema.org/name> "Michael Schachner" .
+_:b344 <http://schema.org/url> "@wineschach" .
+_:b344 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b345 <http://schema.org/description> "Here's a bright, informal red that opens with aromas of candied berry, white pepper and savory herb that carry over to the palate. It's balanced with fresh acidity and soft tannins." .
+_:b345 <http://schema.org/name> "Kerin Keefe" .
+_:b345 <http://schema.org/url> "@kerinokeefe" .
+_:b345 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b346 <http://schema.org/description> "This dry and restrained wine offers spice in profusion. Balanced with acidity and a firm texture, it's very much for food." .
+_:b346 <http://schema.org/name> "Roger Voss" .
+_:b346 <http://schema.org/url> "@vossroger" .
+_:b346 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b347 <http://schema.org/description> "Savory dried thyme notes accent sunnier flavors of preserved peach in this brisk, off-dry wine. It's fruity and fresh, with an elegant, sprightly footprint." .
+_:b347 <http://schema.org/name> "Anna Lee C. Iijima" .
+_:b347 <http://schema.org/url> "" .
+_:b347 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b348 <http://schema.org/description> "This has great depth of flavor with its fresh apple and pear fruits and touch of spice. It's off dry while balanced with acidity and a crisp texture. Drink now." .
+_:b348 <http://schema.org/name> "Roger Voss" .
+_:b348 <http://schema.org/url> "@vossroger" .
+_:b348 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b349 <http://schema.org/description> "Soft, supple plum envelopes an oaky structure in this Cabernet, supported by 15% Merlot. Coffee and chocolate complete the picture, finishing strong at the end, resulting in a value-priced wine of attractive flavor and immediate accessibility." .
+_:b349 <http://schema.org/name> "Virginie Boone" .
+_:b349 <http://schema.org/url> "@vboone" .
+_:b349 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b35 <http://schema.org/name> "Erath" .
+_:b35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Manufacturer> .
+_:b350 <http://schema.org/description> "This is a dry wine, very spicy, with a tight, taut texture and strongly mineral character layered with citrus as well as pepper. It's a food wine with its almost crisp aftertaste." .
+_:b350 <http://schema.org/name> "Roger Voss" .
+_:b350 <http://schema.org/url> "@vossroger" .
+_:b350 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b351 <http://schema.org/description> "Slightly reduced, this wine offers a chalky, tannic backbone to an otherwise juicy explosion of rich black cherry, the whole accented throughout by firm oak and cigar box." .
+_:b351 <http://schema.org/name> "Virginie Boone" .
+_:b351 <http://schema.org/url> "@vboone" .
+_:b351 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b352 <http://schema.org/description> "This is dominated by oak and oak-driven aromas that include roasted coffee bean, espresso, coconut and vanilla that carry over to the palate, together with plum and chocolate. Astringent, drying tannins give it a rather abrupt finish." .
+_:b352 <http://schema.org/name> "Kerin Keefe" .
+_:b352 <http://schema.org/url> "@kerinokeefe" .
+_:b352 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b353 <http://schema.org/description> "Building on 150 years and six generations of winemaking tradition, the winery trends toward a leaner style, with the classic California buttercream aroma cut by tart green apple. In this good everyday sipping wine, flavors that range from pear to barely ripe pineapple prove approachable but not distinctive." .
+_:b353 <http://schema.org/name> "Matt Kettmann" .
+_:b353 <http://schema.org/url> "@mattkettmann" .
+_:b353 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b354 <http://schema.org/description> "Zesty orange peels and apple notes abound in this sprightly, mineral-toned Riesling. Off dry on the palate, yet racy and lean, it's a refreshing, easy quaffer with wide appeal." .
+_:b354 <http://schema.org/name> "Anna Lee C. Iijima" .
+_:b354 <http://schema.org/url> "" .
+_:b354 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b355 <http://schema.org/description> "Baked plum, molasses, balsamic vinegar and cheesy oak aromas feed into a palate that's braced by a bolt of acidity. A compact set of saucy red-berry and plum flavors features tobacco and peppery accents, while the finish is mildly green in flavor, with respectable weight and balance." .
+_:b355 <http://schema.org/name> "Michael Schachner" .
+_:b355 <http://schema.org/url> "@wineschach" .
+_:b355 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b356 <http://schema.org/description> "Raw black-cherry aromas are direct and simple but good. This has a juicy feel that thickens over time, with oak character and extract becoming more apparent. A flavor profile driven by dark-berry fruits and smoldering oak finishes meaty but hot." .
+_:b356 <http://schema.org/name> "Michael Schachner" .
+_:b356 <http://schema.org/url> "@wineschach" .
+_:b356 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b357 <http://schema.org/description> "Desiccated blackberry, leather, charred wood and mint aromas carry the nose on this full-bodied, tannic, heavily oaked Tinto Fino. Flavors of clove and woodspice sit on top of blackberry fruit, then hickory and other forceful oak-based aromas rise up and dominate the finish." .
+_:b357 <http://schema.org/name> "Michael Schachner" .
+_:b357 <http://schema.org/url> "@wineschach" .
+_:b357 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b358 <http://schema.org/description> "Red fruit aromas pervade on the nose, with cigar box and menthol notes riding in the back. The palate is slightly restrained on entry, but opens up to riper notes of cherry and plum specked with crushed pepper. This blend of Merlot, Cabernet Sauvignon and Cabernet Franc is approachable now and ready to be enjoyed." .
+_:b358 <http://schema.org/name> "Alexander Peartree" .
+_:b358 <http://schema.org/url> "" .
+_:b358 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b359 <http://schema.org/description> "Ripe aromas of dark berries mingle with ample notes of black pepper, toasted vanilla and dusty tobacco. The palate is oak-driven in nature, but notes of tart red currant shine through, offering a bit of levity." .
+_:b359 <http://schema.org/name> "Alexander Peartree" .
+_:b359 <http://schema.org/url> "" .
+_:b359 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b36 <http://schema.org/name> "Estampa" .
+_:b36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Manufacturer> .
+_:b360 <http://schema.org/description> "A sleek mix of tart berry, stem and herb, along with a hint of oak and chocolate, this is a fair value in a widely available, drink-now Oregon Pinot. The wine oak-aged for six months, whether in neutral or re-staved is not indicated." .
+_:b360 <http://schema.org/name> "Paul Gregutt" .
+_:b360 <http://schema.org/url> "@paulgwineÂ" .
+_:b360 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b361 <http://schema.org/description> "Delicate aromas recall white flower and citrus. The palate offers passion fruit, lime and white peach with a hint of mineral alongside bright acidity." .
+_:b361 <http://schema.org/name> "Kerin Keefe" .
+_:b361 <http://schema.org/url> "@kerinokeefe" .
+_:b361 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b362 <http://schema.org/description> "This wine from the Geneseo district offers aromas of sour plums and just enough cigar box to tempt the nose. The flavors are a bit flat at first, then the acidity and tension of sour cherries emerges in the midpalate, bolstered by some black licorice." .
+_:b362 <http://schema.org/name> "Matt Kettmann" .
+_:b362 <http://schema.org/url> "@mattkettmann" .
+_:b362 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b363 <http://schema.org/description> "Aromas of prune, blackcurrant, toast and oak carry through to the extracted palate, along with flavors of black cherry and roasted coffee beans. Firm but drying tannins provide the framework." .
+_:b363 <http://schema.org/name> "Kerin Keefe" .
+_:b363 <http://schema.org/url> "@kerinokeefe" .
+_:b363 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b364 <http://schema.org/description> "Oak and earth intermingle around robust aromas of wet forest floor in this vineyard-designated Pinot that hails from a high-elevation site. Small in production, it offers intense, full-bodied raspberry and blackberry steeped in smoky spice and smooth texture." .
+_:b364 <http://schema.org/name> "Virginie Boone" .
+_:b364 <http://schema.org/url> "@vboone" .
+_:b364 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b365 <http://schema.org/description> "Pretty aromas of yellow flower and stone fruit lead the nose. The bright palate offers yellow apple, apricot, vanilla and delicate notes of lightly toasted oak alongside crisp acidity." .
+_:b365 <http://schema.org/name> "Kerin Keefe" .
+_:b365 <http://schema.org/url> "@kerinokeefe" .
+_:b365 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b366 <http://schema.org/description> "Aromas recall ripe dark berry, toast and a whiff of cake spice. The soft, informal palate offers sour cherry, vanilla and a hint of espresso alongside round tannins. Drink soon." .
+_:b366 <http://schema.org/name> "Kerin Keefe" .
+_:b366 <http://schema.org/url> "@kerinokeefe" .
+_:b366 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b367 <http://schema.org/description> "Aromas suggest mature berry, scorched earth, animal, toast and anise. The palate offers ripe black berry, oak, espresso, cocoa and vanilla alongside dusty tannins." .
+_:b367 <http://schema.org/name> "Kerin Keefe" .
+_:b367 <http://schema.org/url> "@kerinokeefe" .
+_:b367 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b368 <http://schema.org/description> "Clarksburg is becoming a haven for Chenin Blanc in California. This bottling, using fruit sourced from several vineyards in the area, is balanced with just a trace of sweetness in the background (1% residual sugar). This is crisp, straightforward and blessed with notes of pear and lime. Drink it cold." .
+_:b368 <http://schema.org/name> "Virginie Boone" .
+_:b368 <http://schema.org/url> "@vboone" .
+_:b368 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b369 <http://schema.org/description> "Red cherry fruit comes laced with light tannins, giving this bright wine an open, juicy character." .
+_:b369 <http://schema.org/name> "Roger Voss" .
+_:b369 <http://schema.org/url> "@vossroger" .
+_:b369 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b37 <http://schema.org/name> "Feudi del Pisciotto" .
+_:b37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Manufacturer> .
+_:b370 <http://schema.org/description> "Merlot and Nero d'Avola form the base for this easy red wine that would pair with fettuccine and meat sauce or pork roast. The quality of the fruit is clean, bright and sharp." .
+_:b370 <http://schema.org/name> "" .
+_:b370 <http://schema.org/url> "" .
+_:b370 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b371 <http://schema.org/description> "Part of the extended CalanÃ¬ca series, this Grillo-Viognier blend shows aromas of honeysuckle and jasmine, backed by touches of cut grass and wild sage. In the mouth, it shows ripe yellow-fruit flavors." .
+_:b371 <http://schema.org/name> "" .
+_:b371 <http://schema.org/url> "" .
+_:b371 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b372 <http://schema.org/description> "Rustic and dry, this has flavors of berries, currants, licorice and spices. Made from Cabernet Franc and Cabernet Sauvignon." .
+_:b372 <http://schema.org/name> "" .
+_:b372 <http://schema.org/url> "" .
+_:b372 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Review> .
+_:b373 <http://schema.org/description> "This shows a tart, green gooseberry flavor that is similar to New Zealand Sauvignon Blanc. Other notes include tropical fruit, orange and honey. Unoaked, with a splash of Muscat, this has commendable dryness and acidity." .
+_:b373 <http://schema.org/name> "" .
+_:b373 <http://schema.org/url> "" .

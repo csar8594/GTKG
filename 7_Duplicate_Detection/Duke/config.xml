@@ -1,0 +1,109 @@
+
+<duke>
+    <schema>
+        <threshold>0.82</threshold>
+        <maybe-threshold>0.75</maybe-threshold>
+        <path>index</path>
+
+        <property type="id">
+            <name>ID</name>
+        </property>
+
+        <property>
+            <name>NAME</name>
+            <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+            <low>0.1</low>
+            <high>0.6</high>
+        </property>
+		<property>
+            <name>ADDRESS</name>
+            <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+            <low>0.3</low>
+            <high>0.85</high>
+        </property>
+        <property>
+            <name>EMAIL</name>
+            <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+            <low>0.45</low>
+            <high>0.85</high>
+        </property>
+		<property>
+            <name>POSTALCODE</name>
+            <comparator>no.priv.garshol.duke.comparators.NumericComparator</comparator>
+            <low>0.1</low>
+            <high>0.6</high>
+        </property>
+		<property>
+            <name>PHONE</name>
+            <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+            <low>0.1</low>
+            <high>0.85</high>
+        </property>
+		<property>
+            <name>LOCALITY</name>
+            <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+            <low>0.1</low>
+            <high>0.6</high>
+        </property>
+		<property>
+            <name>URL</name>
+            <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+            <low>0.1</low>
+            <high>0.85</high>
+        </property>
+		<property>
+            <name>FAX</name>
+            <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+            <low>0.1</low>
+            <high>0.85</high>
+        </property>
+		
+        <!--<property>
+            <name>URL</name>
+            <comparator>no.priv.garshol.duke.comparators.Levenshtein</comparator>
+            <low>0.1</low>
+            <high>0.88</high>
+        </property>-->
+    </schema>
+
+    <ntriples>
+        <param name="input-file" value="hotels.nt"/>
+
+        <column name="?uri"
+                property="ID"/>
+        <column name="https://schema.org/name"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="NAME"/>
+        <column name="https://schema.org/latitude"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="LATITUDE"/>
+        <column name="https://schema.org/longitude"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="LONGITUDE"/>
+        <column name="https://schema.org/streetAddress"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="ADDRESS"/>
+        <column name="https://schema.org/email"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="EMAIL"/>
+        <column name="https://schema.org/postalCode"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="POSTALCODE"/>
+        <column name="https://schema.org/telephone"
+                cleaner="no.priv.garshol.duke.cleaners.PhoneNumberCleaner"
+                property="PHONE"/>
+        <column name="https://schema.org/addressLocality"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="LOCALITY"/>
+        <column name="https://schema.org/url"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="URL"/>
+        <column name="https://schema.org/faxNumber"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="FAX"/>
+        <!-- URL WILL NOT MAKE THINGS BETTER AS IT IS SIMILAR TO NAME -->
+        <!--<column name="http://schema.org/url"
+                cleaner="no.priv.garshol.duke.cleaners.LowerCaseNormalizeCleaner"
+                property="URL"/>-->
+    </ntriples>
+</duke>
