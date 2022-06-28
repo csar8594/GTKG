@@ -34,7 +34,7 @@ GTKG
 ¦   ¦   ¦   firmenregister.json
 ¦   ¦   ¦   firmenregister.n3
 ¦   ¦   ¦   mapping.ttl
-+---mapping_wikidata
+¦   +---mapping_wikidata
 ¦   ¦   ¦   .....
 +---6__Assessment
 ¦   +---assessment_firmenregister
