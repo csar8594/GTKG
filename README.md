@@ -34,10 +34,37 @@ GTKG
 ¦   ¦   ¦   firmenregister.json
 ¦   ¦   ¦   firmenregister.n3
 ¦   ¦   ¦   mapping.ttl
++---mapping_wikidata
+¦   ¦   ¦   .....
 +---6__Assessment
 ¦   +---assessment_firmenregister
 ¦   ¦   ¦   convert.sh
 ¦   ¦   ¦   firmenregister.json
 ¦   ¦   ¦   assessing.py
 ¦   ¦   ¦   requirements.txt
+¦   ¦   ¦   manualChecking.csv
+¦   +---assessment_wikidata
+¦   ¦   ¦   convert.sh
+¦   ¦   ¦   wikidata.json
+¦   ¦   ¦   assessing.py
+¦   ¦   ¦   requirements.txt
+¦   ¦   ¦   manualChecking.csv
++---7__Duplicate_Detection/Duke
+¦   ¦   ¦   Dockerfile
+¦   ¦   ¦   Dockerfile_alt
+¦   ¦   ¦   config.xml
+¦   ¦   ¦   duke-core-1.3-SNAPSHOT.jar
+¦   ¦   ¦   entrypoint.sh
+¦   ¦   ¦   generatedDuplicateCheckFile.nt
+¦   ¦   ¦   hotels.nt
+¦   ¦   ¦   out.txt
+¦   ¦   ¦   reports_2.txt
+¦   ¦   ¦   reports_3.txt
+¦   ¦   ¦   reports_4.txt
++---8__Error_Detection
+¦   ¦   ¦   SHACL_Code.txt
+¦   ¦   ¦   Violation_Reports.txt
+¦   ¦   ¦   hotels.nt
++---9__Knowledge_Graph
+¦   ¦   ¦   Just_Hotels.nt
 ```
