@@ -14,18 +14,18 @@ of the German Tourism Knowledge Graph *(GTKG)*
 ```
 GTKG
 ¦   README.md   
-+---1__Task 1
++---1__Sources_Research
 ¦   ¦   presentation.pdf
 ¦   ¦   presentation.pptx
-+---2__Task 2
++---2__Dimensions_Metrics
 ¦   ¦   KG Assessment - Dimensions and Metrics.pdf
 +---3__Scraper
 ¦   ¦   README.md
-¦   ¦   requirements.txt
+¦   ¦   requirements.tx
 ¦   ¦   log.csv
 ¦   ¦   firmenregister.json
 ¦   ¦   scraper.py
-+---4__Scraper_results
++---4__Scraper_Results
 ¦   ¦   firmenregister.json
 ¦   ¦   log.csv
 +---5__Mappings
@@ -49,7 +49,8 @@ GTKG
 ¦   ¦   ¦   assessing.py
 ¦   ¦   ¦   requirements.txt
 ¦   ¦   ¦   manualChecking.csv
-+---7__Duplicate_Detection/Duke
++---7__Duplicate_Detection
+¦   +---Duke
 ¦   ¦   ¦   Dockerfile
 ¦   ¦   ¦   Dockerfile_alt
 ¦   ¦   ¦   config.xml
@@ -65,6 +66,6 @@ GTKG
 ¦   ¦   ¦   SHACL_Code.txt
 ¦   ¦   ¦   Violation_Reports.txt
 ¦   ¦   ¦   hotels.nt
-+---9__Knowledge_Graph
++---9__Final_Knowledge_Graph
 ¦   ¦   ¦   Just_Hotels.nt
 ```
