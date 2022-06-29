@@ -35,7 +35,11 @@ GTKG
 ¦   ¦   ¦   firmenregister.n3
 ¦   ¦   ¦   mapping.ttl
 ¦   +---mapping_wikidata
-¦   ¦   ¦   .....
+¦   ¦   ¦   index.js
+¦   ¦   ¦   mapping.ttl
+¦   ¦   ¦   mapping_results.n3
+¦   ¦   ¦   sparql_query_wikidata.txt
+¦   ¦   ¦   wikidata_sparql_query_result.json
 +---6__Assessment
 ¦   +---assessment_firmenregister
 ¦   ¦   ¦   convert.sh
