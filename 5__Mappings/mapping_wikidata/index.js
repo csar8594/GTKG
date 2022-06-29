@@ -11,7 +11,7 @@ const doMapping = async () => {
     replace: false,
     ignoreEmptyStrings: true,
   };
-  const result = await parser.parseFile('./mapping.ttl', './hotels_g_e_p_sa.n3', options).catch((err) => { console.log(err); });
+  const result = await parser.parseFile('./mapping.ttl', './mapping_results.n3', options).catch((err) => { console.log(err); });
   //console.log(result);
 };
 
