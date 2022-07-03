@@ -19,6 +19,9 @@ GTKG
 ¦   ¦   presentation.pptx
 +---2__Dimensions_Metrics
 ¦   ¦   KG Assessment - Dimensions and Metrics.pdf
+¦   ¦   KG Assessment - Dimensions and Metrics.docx
+¦   ¦   presentation.pdf
+¦   ¦   presentation.pptx
 +---3__Scraper
 ¦   ¦   README.md
 ¦   ¦   requirements.tx
@@ -41,6 +44,8 @@ GTKG
 ¦   ¦   ¦   sparql_query_wikidata.txt
 ¦   ¦   ¦   wikidata_sparql_query_result.json
 +---6__Assessment
+¦   ¦   presentation.pdf
+¦   ¦   presentation.pptx
 ¦   +---assessment_firmenregister
 ¦   ¦   ¦   convert.sh
 ¦   ¦   ¦   firmenregister.json
@@ -67,9 +72,11 @@ GTKG
 ¦   ¦   ¦   reports_3.txt
 ¦   ¦   ¦   reports_4.txt
 +---8__Error_Detection
-¦   ¦   ¦   SHACL_Code.txt
-¦   ¦   ¦   Violation_Reports.txt
-¦   ¦   ¦   hotels.nt
+¦   ¦   SHACL_Code.txt
+¦   ¦   Violation_Reports.txt
+¦   ¦   hotels.nt
 +---9__Final_Knowledge_Graph
-¦   ¦   ¦   Just_Hotels.nt
+¦   ¦   presentation.pdf
+¦   ¦   presentation.pptx
+¦   ¦   Just_Hotels.nt
 ```
